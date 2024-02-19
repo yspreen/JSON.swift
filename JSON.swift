@@ -174,6 +174,7 @@ extension JSON: Encodable {
 	}
 }
 
+fileprivate let Gregorian = Calendar(identifier: .gregorian)
 fileprivate extension Date {
 	static func newIsoFormatter() -> DateFormatter {
 		let dateTimeFormatter = DateFormatter()
