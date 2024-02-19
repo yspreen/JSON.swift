@@ -9,6 +9,7 @@ import Foundation
 
 public typealias JSONDict = [String: AnyHashable]
 
+@available(iOS, introduced: 8.0)
 public struct JSON {
 	public var value: AnyHashable
 	public var tag: Int?
