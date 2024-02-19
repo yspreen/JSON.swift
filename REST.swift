@@ -25,6 +25,7 @@ fileprivate extension Data {
 	}
 }
 
+@available(iOS, introduced: 8.0)
 public struct Rest {
 	let boundary = { "--\((0..<16).map { _ in String(format: "%02x", UInt8.random(in: 0...255)) }.joined())" }()
 
